@@ -1,0 +1,30 @@
+A* (A star) is a great tool for solving navigational problems.
+
+Gridworld is a program to navigate in a grid from a start position to a goal. Obstacles can be placed in the grid. The program uses A* to compute the best path. This program is a good introduction to A* and heap data structure.
+
+Grid are specified using text files. A sample grid would like this.
+
+s _ _ _
+x _ _ x
+_ x _ g
+
+where 
+s is start.
+g is goal.
+x is a obstacle
+_ is an open cell.
+
+The main class is called Astar and it is run with the following arguments
+
+-i 4.txt -d f -t s
+where
+i the filename specifying the grid
+d the direction of the search  forwards or backwards from the goal. Valid values are 
+	f forward
+        b backward
+t how to solve tie breaks. Valid values are
+	s prefer smaller g-values
+     	l prefer larger g-values 
+
+Coming soon: Adaptive A* - where the program learns from its mistakes and updates its heuristics compared to the fixed Manhattan distance heuristic used in grid solvers.
+
